@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>CL2 DEW</title>
+</head>
+
+<body onload="carrusel()">
+    <header>
+        <nav class="menu">
+
+            <label class="logo"><a href="#"><img id="bembos" src="img/logo-Bembos2.png" alt=""></a></label>
+
+            <div class="contenidoTelefono">
+                <img src="img/llamada-telefonica.png" id="telefono" alt="Telefono Bembos">
+                <div class="letrasTelefono">
+                    <span class="colorOrange">Delivery</span> LIMA
+                    <p class="numeroTelefono">014191919</p>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <nav>
+        <ul class="nav__ul">
+            <li><a href="#" class="enlaceMenu">MENÚ</a></li>
+            <li><a href="#" class="enlaceBeneficios">BENEFICIOS</a></li>
+            <li><a href="#" class="enlacePromociones">PROMOCIONES</a></li>
+            <li><a href="#" class="enlaceLocales">LOCALES</a></li>
+            <li><a href="#" class="enlaceZonasReparto">ZONAS DE REPARTO</a></li>
+            <li><a href="#" class="enlaceNosotros">NOSOTROS</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!-- Imagen carrusel -->
+        <img src="img/img1.jpg" id="imgcab">
+        <!-- Grid template -->
+        <div class="registro">
+            <div class="regDatosPersonales">
+                <h1>REGISTRO DE DATOS PERSONALES</h1>
+                <form action="" class="form1" onsubmit="return validar()">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>DNI</td>
+                                <td>
+                                    <input type="txtDNI" id="txtDNI" placeholder="DNI" class="txt" maxlength="8">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APELLIDOS Y NOMBRES</td>
+                                <td>
+                                    <input type="txtApeNomb" id="txtApeNom" placeholder="Apellidos y Nombres"
+                                        class="txt" maxlength="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CORREO</td>
+                                <td>
+                                    <input type="txtCor" id="txtCor" placeholder="Correo" class="txt" maxlength="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MOVIL</td>
+                                <td>
+                                    <input type="txtMovil" id="txtMovil" placeholder="Celular" class="txt"
+                                        maxlength="9">
+                                </td>
+                            </tr>
+                            <tr class="contenedorValidar1">
+                                <td colspan="2">
+                                    <input type="submit" value="Validar" class="validar">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="contenedorMostrar">
+                <div class="mensajes">
+                    <input type="button" value="Mostrar" class="validar" onclick="Nodos()">
+
+                </div>
+                <textarea id="txtArea" cols="30" rows="6">Comentarios:
+                </textarea>
+
+            </div>
+        </div>
+        <div class="atencion">
+            <div class="divAtencion">
+                <h3>Atención en Lima*</h3>
+            </div>
+            <div class="divAtencion">
+                <h4> Delivery: Hasta las 11pm*</h4>
+                <h4>Recojo en tienda: Hasta las 9pm*</h4>
+            </div>
+        </div>
+        <div class="Login">
+            <h1>Si usted ya es usuario, proceda a identificarse</h1>
+            <form action="">
+                <table>
+                    <tbody class="form2">
+                        <tr>
+                            <td class="userLogin">USUARIO</td>
+                            <td>
+                                <input id="usuario" type="txtUser" placeholder="User" class="txt">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="userLogin">CONTRASEÑA</td>
+                            <td>
+                                <input id="contrasenia" type="password" placeholder="Password" class="txt">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="validarLogin">
+                                <input type="submit" value="Validar" class="validar" onclick="Usuarios()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="divFooter">
+            <!-- No incluye logo de footer porque queda feo
+            <img src="img/logo-Bembos2.png" alt="Logo Bembos" class="logoFooter"> -->
+            <h6>
+                © 2021 Todos los derechos reservados
+            </h6>
+        </div>
+    </footer>
+
+    <script src="js/codigos.js"></script>
+</body>
+
+</html>

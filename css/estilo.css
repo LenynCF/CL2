@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  width: 95%;
+  margin: auto;
+}
+/* HEADER */
+.menu {
+  background-color: darkblue;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid darkblue;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.1); para revisar atras del menu */
+  overflow: hidden;
+  justify-content: space-between;
+}
+/*logo*/
+#bembos {
+  float: left;
+  height: 80px;
+  margin-left: 20px;
+}
+
+/* Teléfono */
+#telefono {
+  height: 50px;
+}
+.contenidoTelefono {
+  font-weight: 900;
+  display: flex;
+  margin-right: 50px;
+}
+.colorOrange {
+  color: orange;
+}
+.letrasTelefono {
+  color: #fff;
+}
+.numeroTelefono {
+  font-size: 20px;
+}
+
+/*  Lista de enlaces del nav*/
+.nav__ul {
+  font-weight: 700;
+  display: flex;
+  list-style: none;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.nav__ul li {
+  border-radius: 3px;
+  margin: auto 0;
+  flex-grow: 1;
+}
+.nav__ul li a {
+  text-decoration: none;
+  padding: 7px 13px;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+}
+
+.nav__ul li:hover {
+  background-color: rgb(0, 0, 139);
+  transition: 0.4s;
+}
+.nav__ul li a:hover {
+  color: #fff;
+}
+
+/* SECTION */
+/* Carrusel Bembos*/
+#imgcab {
+  width: 100%;
+  height: 200px;
+}
+/* Formulario 1 */
+.registro {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.regDatosPersonales h1 {
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+table,
+tr,
+td {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.txt {
+  border: none;
+  margin: 0;
+}
+.contenedorValidar1 {
+  text-align: center;
+}
+.validar {
+  border: none;
+  background-color: darkblue;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+/* Area de texto */
+.contenedorMostrar {
+  display: grid;
+  text-align: center;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+#txtArea {
+  resize: none;
+}
+/* Atención en Lima */
+.atencion {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+}
+h3 {
+  text-align: right;
+  font-size: 25px;
+  margin-right: 20px;
+}
+.divAtencion {
+  width: 50%;
+}
+/* Login */
+.userLogin {
+  display: flex;
+  border: none;
+  margin: 0 150px;
+}
+.validarLogin {
+  text-align: center;
+}
+/* FOOTER */
+.divFooter {
+  background-color: darkblue;
+  color: #fff;
+}
+h6 {
+  text-align: center;
+  padding: 5px 0;
+}
+.logoFooter {
+  background-color: darkblue;
+  height: 50px;
+}
